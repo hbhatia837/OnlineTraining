@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/basic"
+
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#2196F3"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great to see you again"
+            android:id="@+id/choose"
+           android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+
+
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginTop="50dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <Spinner
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            ></Spinner>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:digits="0123456789"
+            android:hint="Enter your Number"
+            android:maxLength="10"
+            android:id="@+id/mobilenumber"
+
+            />
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="We will send a 6 digit otp to verify "
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="80dp"
+    />
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:id="@+id/next"
+    style="@style/MyButton"
+    android:background="@drawable/design"
+    android:textColor="#ffffff"
+    android:layout_gravity="center"
+    android:backgroundTint="#2196F3"
+    android:layout_marginTop="20dp"
+
+    />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access"
+            android:id="@+id/basic"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#2196F3"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000+ Engaging Videos"
+            android:id="@+id/choose"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="75dp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#2196F3"
+
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputname"
+        app:errorEnabled="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:singleLine="true"
+
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="10sp"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    >
+ <Spinner
+     android:layout_width="95dp"
+     android:layout_height="wrap_content"
+     android:id="@+id/spinner"
+     ></Spinner>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_weight="2"
+android:digits="0123456789"
+android:hint="Enter your Number"
+android:maxLength="10"
+android:id="@+id/mobilenumber"
+
+    />
+
+
+
+
+</LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputemail"
+        app:errorEnabled="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:singleLine="true"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/register"
+    android:text="Register"
+    android:backgroundTint="#2196F3"
+    android:background="@drawable/design"
+    android:textColor="#ffffff"
+    android:layout_gravity="center"
+    style="@style/MyButton"
+
+
+
+
+    />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:text="Already registered?"
+     android:id="@+id/already"
+     android:layout_marginLeft="50dp"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/already"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/logn"
+        android:layout_marginLeft="20dp"
+        android:textColor="#2196F3"
+        />
+
+
+
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
